@@ -26,10 +26,10 @@
 
     <Spinner
         android:id="@+id/color"
-        android:layout_width="368dp"
+        android:layout_width="243dp"
         android:entries="@array/beer_colors"
-        android:layout_height="wrap_content"
-        tools:layout_editor_absoluteX="8dp"
-        tools:layout_editor_absoluteY="39dp" />
+        android:layout_height="46dp"
+        tools:layout_editor_absoluteX="71dp"
+        tools:layout_editor_absoluteY="56dp" />
 
 </android.support.constraint.ConstraintLayout>

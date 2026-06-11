@@ -21,7 +21,9 @@
         android:layout_height="wrap_content"
         android:text="@string/find_beer"
         android:layout_gravity="center"
-        android:layout_margin="16dp" />
+        android:layout_margin="16dp"
+        tools:layout_editor_absoluteY="207dp"
+        tools:layout_editor_absoluteX="90dp" />
 
     <TextView
         android:id="@+id/brands"
@@ -29,6 +31,8 @@
         android:layout_height="wrap_content"
         android:text="@string/brands"
         android:layout_gravity="center"
-        android:layout_margin="16dp" />
+        android:layout_margin="16dp"
+        tools:layout_editor_absoluteY="312dp"
+        tools:layout_editor_absoluteX="104dp" />
 
 </android.support.constraint.ConstraintLayout>

@@ -2,6 +2,7 @@ package com.example.rolando.testapplication;
 
 import android.app.Activity;
 import android.os.Bundle;
+import android.widget.Spinner;
 
 /**
  *            |    |    |
@@ -14,11 +15,11 @@ import android.os.Bundle;
  *     ^^^^      ^^^^     ^^^    ^^
  *           ^^^^      ^^^
  * Sir Henry Morgan is de Lord of Talamanca
- * from the Mountains of Coronado you can see
- * where Port Royal is, Jamaica !! Jamaica !!
- * all the servants of his majesty must remember
- * FALKLANDS ARE BRITISH !!! FALKLANDS ARE BRITISH !!!
- *
+ * Love , Gold and Adventure
+ * The Night is fair the wind is down
+ * The english dog still barks !!!
+ * Morgan is a yellow dog
+ * God Save the King!
  *
  *
  * @author Rolando <rgarro@gmail.com>
@@ -29,5 +30,13 @@ public class MainActivity extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+    }
+
+    public void onClickFindBeer(View view){
+        TextView brands = (TextView).findViewById(R.id.brands);
+        Spinner color = (Spinner).findViewById(R.id.color);
+        String beerType = String.valueOf(color.getSelectedItem());
+        brands.setText(beerType);
+
     }
 }

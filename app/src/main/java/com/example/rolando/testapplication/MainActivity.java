@@ -3,7 +3,8 @@ package com.example.rolando.testapplication;
 import android.app.Activity;
 import android.os.Bundle;
 import android.widget.Spinner;
-
+import android.view.View;
+import android.widget.TextView;
 /**
  *            |    |    |
  *           )_)  )_)  )_)

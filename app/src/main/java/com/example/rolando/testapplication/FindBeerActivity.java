@@ -16,7 +16,11 @@ package com.example.rolando.testapplication;
  *
  * @author Rolando <rgarro@gmail.com>
  */
+import android.app.Activity;
+import android.os.Bundle;
+import android.view.View;
 
 
-public class FindBeerActivity {
+public class FindBeerActivity extends Activity {
+
 }

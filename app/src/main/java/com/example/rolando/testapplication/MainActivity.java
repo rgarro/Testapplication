@@ -42,8 +42,13 @@ public class MainActivity extends Activity {
         TextView brands = (TextView) findViewById(R.id.brands);
         Spinner color = (Spinner) findViewById(R.id.color);
         String beerType = String.valueOf(color.getSelectedItem());
-        brands.setText(beerType);
+        //brands.setText(beerType);
         //get extra recommendations
         List<String> brandsList = expert.getBrands(beerType);
+        StringBuilder brandsFormatted = new StringBuilder();
+        for(String brand : brandsList){
+            brandsFormatted.append(brand).append('\n');
+        }
+        brands.setText(brandsFormatted);
     }
 }

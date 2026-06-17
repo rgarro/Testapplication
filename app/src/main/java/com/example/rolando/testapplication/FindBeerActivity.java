@@ -1,5 +1,13 @@
 package com.example.rolando.testapplication;
 
+
+import android.app.Activity;
+import android.os.Bundle;
+import android.view.View;
+import android.widget.Spinner;
+import android.widget.TextView;
+import java.util.List;
+
 /**
  *            |    |    |
  *           )_)  )_)  )_)
@@ -16,11 +24,13 @@ package com.example.rolando.testapplication;
  *
  * @author Rolando <rgarro@gmail.com>
  */
-import android.app.Activity;
-import android.os.Bundle;
-import android.view.View;
-
-
 public class FindBeerActivity extends Activity {
 
+    private BeerExpert expert = new BeerExpert();
+
+    @Override
+    protected  void onCreate(Bundle savedInstanceState){
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);//find_beer
+    }
 }
